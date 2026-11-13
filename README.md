@@ -117,7 +117,7 @@ If you have Docker configured, you can use docker-compose.
 
 ```bash
 # Start both RP Server and FIDO2 Server
-docker-compose up
+docker-compose up --build
 ```
 
 Once the applications are running, access the test page at:

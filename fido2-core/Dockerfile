@@ -6,7 +6,7 @@ WORKDIR /workspace/app
 COPY . .
 RUN ./server/gradlew dockerBuild
 
-FROM openjdk:11-jre-slim-buster
+FROM openjdk:21-ea-jdk-slim-buster 
 EXPOSE 8081
 COPY --from=builder /workspace/app/server/build/libs/server*.jar server.jar
 
