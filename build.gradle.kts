@@ -14,7 +14,7 @@
  * under the License.
  */
 
-val lombokVersion = "1.18.18"
+val lombokVersion = "1.18.48"
 
 subprojects {
     apply(plugin = "java")
